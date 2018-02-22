@@ -6,16 +6,16 @@ body {
 }
 
 .simon { 
-  width: 310px; 
-  height: 310px; 
+  width: 410px; 
+  height: 410px; 
   border-radius: 50%;
   background-color: #222222;
   position: relative;
 }
 
 .q1 {
-	height: 140px;
-	width: 140px;
+	height: 190px;
+	width: 190px;
 	background-color: green;
 	float: left;
 	margin-top: 10px;
@@ -24,8 +24,8 @@ body {
 }
 
 .q2 {
-	height: 140px;
-	width: 140px;
+	height: 190px;
+	width: 190px;
 	background-color: red;
 	float: right;
 	margin-top: 10px;
@@ -34,8 +34,8 @@ body {
 } 
 
 .q3 {
-	height: 140px;
-	width: 140px;
+	height: 190px;
+	width: 190px;
 	background-color: yellow;
 	float: left;
 	margin-top: 10px;
@@ -44,8 +44,8 @@ body {
 } 
 
 .q4 {
-	height: 140px;
-	width: 140px;
+	height: 190px;
+	width: 190px;
 	background-color: blue;
 	float: right;
 	margin-top: 10px;
@@ -59,12 +59,65 @@ body {
 }
 
 .menu {
-	height: 150px;
-	width: 150px;
+	height: 210px;
+	width: 210px;
 	position: absolute;
-	top: 80px;
-	left: 80px;
+	top: 100px;
+	left: 100px;
 	border-radius: 50%;
 	background-color: #fff;
 	border: 10px solid #222222;
+
+	display: flex;
+	flex-direction: column;
 } 
+
+.title {
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.buttons {
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+}
+
+.screen {
+	height: 40px;
+	width: 50px;
+	background: #350D14;
+	border-radius: 10px;
+}
+
+.start {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #FC0609;
+	margin: auto 20px;
+	border: 3px solid #464646;
+	outline: none;
+}
+
+.strict {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: #FFFF04;
+	margin: auto 0;
+	border: 3px solid #464646;
+	outline: none;
+}
+
+.legends {
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.screen-legend {
+}
