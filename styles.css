@@ -3,6 +3,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	background-image: url("https://taboaomadeiras.com.br/gmad/wp-content/uploads/2016/05/th_8ca15838e597ee71c155ceae7cbc230c_1460759715CastanhaBranca_490x360.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .simon { 
@@ -21,6 +26,8 @@ body {
 	margin-top: 10px;
 	margin-left: 10px;
 	border-top-left-radius: 100%;
+	opacity: 0.6;
+	box-shadow: 6px 7px 20px 15px rgba(0,0,0,0.3);
 }
 
 .q2 {
@@ -31,6 +38,8 @@ body {
 	margin-top: 10px;
 	margin-right: 10px;
 	border-top-right-radius: 100%;
+	opacity: 0.6;
+	box-shadow: 6px 7px 20px 15px rgba(0,0,0,0.3);
 } 
 
 .q3 {
@@ -41,6 +50,8 @@ body {
 	margin-top: 10px;
 	margin-left: 10px;
 	border-bottom-left-radius: 100%;
+	opacity: 0.6;
+	box-shadow: 6px 7px 20px 15px rgba(0,0,0,0.3);
 } 
 
 .q4 {
@@ -51,10 +62,11 @@ body {
 	margin-top: 10px;
 	margin-right: 10px;
 	border-bottom-right-radius: 100%;
+	opacity: 0.6;
+	box-shadow: 6px 7px 20px 15px rgba(0,0,0,0.3);
 }
 
 .q1:hover, .q2:hover, .q3:hover, .q4:hover {
-	opacity: 0.8;
 	cursor: pointer;
 }
 
@@ -86,12 +98,33 @@ body {
 	justify-content: center;
 }
 
+.screen-box {
+	display: flex;
+	flex-direction: column;
+}
+
 .screen {
 	height: 40px;
 	width: 50px;
 	background: #350D14;
 	border-radius: 10px;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #DC0D29;
 }
+
+.screen-number {
+	opacity: 0.3;
+	margin-top: 10px;
+}
+
+.start-box {
+	display: flex;
+	flex-direction: column;
+}
+
 
 .start {
 	height: 30px;
@@ -101,6 +134,23 @@ body {
 	margin: auto 20px;
 	border: 3px solid #464646;
 	outline: none;
+}
+
+.strict-box {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.led {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: #000;
+	border: 2px solid #000;
+	position: absolute;
+	left: 11px;
+    top: -7px;
 }
 
 .strict {
@@ -113,11 +163,27 @@ body {
 	outline: none;
 }
 
-.legends {
+.legend {
 	font-size: 10px;
-	display: flex;
-	justify-content: center;
+	margin: 0 auto;
 }
 
-.screen-legend {
+.on-off {
+	height: 25px;
+	width: 50px;
+	background-color: #000;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+.on-off:hover {
+	cursor: pointer;
+}
+
+.on-off-button {
+	height: 25px;
+	width: 25px;
+	background-color: #3193DE;
+	border: 3px solid #333333;
+	border-radius: 5px;
 }

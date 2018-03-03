@@ -11,24 +11,50 @@
 	<main>
   		<section>
   	  		<div class="simon">
-  	  			<div class="q1"></div>
-		  		<div class="q2"></div>
-		  		<div class="q3"></div>
-		  		<div class="q4"></div>
+  	  			<div class="btn q1"></div>
+		  		<div class="btn q2"></div>
+		  		<div class="btn q3"></div>
+		  		<div class="btn q4"></div>
 		  		<div class="menu">
 		  			<h1 class="title">Simon</h1>
 		  			<div class="buttons">
-		  				<div class="screen"></div>
-		  				<button class="start"></button>
-		  				<button class="strict"></button>
+		  				<div class="screen-box">
+		  					<div class="screen"><p class="screen-number">--</p></div>
+		  					<p class="legend">COUNT</p>
+		  				</div>
+		  				<div class="start-box">
+		  					<div class="btn start"></div>
+		  					<p class="legend">START</p>
+		  				</div>
+		  				<div class="strict-box">
+		  					<div class="led"></div>
+		  					<div class="btn strict"></div>
+		  					<p class="legend">STRICT</p>
+		  				</div>
 		  			</div>
-		  			<div class="legends">
-		  				<div class="screen-legend">COUNT</div>
-		  				<div class="start-legend">START</div>
-		  				<div class="strict-legend">STRICT</div>
+
+		  			<div class="on-off">
+		  				<div class="on-off-button"></div>
 		  			</div>
 		  		</div>
   	  		</div>
+
+  	  		<audio id="Audio1">
+			  <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+			<audio id="Audio2">
+			  <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+			<audio id="Audio3">
+			  <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+			<audio id="Audio4">
+			  <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
   		</section>
   </main>
 </body>
@@ -36,6 +62,5 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-</script>
+<script type="text/javascript" src="scripts.js"></script>
 </html>
